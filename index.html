@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title> Color App by Ganesh</title>
+		<style>
+			*{font-size:50px;}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1>Color App</h1>
+			<form onsubmit="cm()">
+				<input type="submit" value="Red"/>
+				<input type="submit" value="Green"/>
+				<input type="submit" value="Blue"/>
+			</form>
+			<script>
+				function cm(){
+					event.preventDefault();
+					let action= document.activeElement.value;
+					
+					if(action==="Red")
+						document.body.style.backgroundColor="red";
+					
+					else if(action==="Blue")
+						document.body.style.backgroundColor="blue";
+					
+					if(action==="Green")
+						document.body.style.backgroundColor="green";
+}
+			</script>
+		</center>
+	</body>
+</html>
